@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+:root {
+  --main-font-style: "Roboto", sans-serif;
+}
+* {
+  font-family: var(--main-font-style);
+  
+
+}
 body{
     margin: 0;
     padding: 0;
@@ -9,9 +18,10 @@ body{
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
+  
 }
 
-header{
+.flex-3d{
     position: relative;
     display: flex;
     justify-content: center;
@@ -20,6 +30,7 @@ header{
     padding-bottom: 1rem;
     transform-style: preserve-3d;
     z-index: -1;
+    flex-direction: column;
 }
 
 .foreground{
@@ -28,6 +39,8 @@ header{
     width: 100vw;
     object-fit: cover;
     z-index: -1;
+    padding: 0;
+    margin: 0;
 }
 
 .foreground{
@@ -42,10 +55,104 @@ header{
 }
 
 section{
-    background-color: rgb(51, 51, 51);
-    font-size: 1.5rem;
+    min-height: 40vh;
+    background-color: rgb(245, 245, 248);
+    font-size: 1.2rem;
     line-height: 1.5;
     padding: 2rem;
-    color: white;
-    
+    color: black;
+    text-align: justify;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(245, 245, 248);
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transform-style: preserve-3d;
+    padding: 1.25rem;
+    font-size: 1.1rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.menu ul{
+    margin: 0%;
+    display: flex;
+    gap: 4rem;
+    justify-content: flex-end;
+}
+
+.menu ul li{
+    list-style-type: none;
+    cursor: pointer;
+}
+.search-wrapper{
+    display: flex;
+    background-color: white;
+    border-radius: 35px;
+    position: relative;
+    bottom: 7.5rem;
+}
+
+.search-wrapper .input-group{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid gainsboro;
+    padding: 1rem;
+}
+.search-wrapper .input-group input{
+    min-width: 10rem;
+    outline: none;
+    border: none;
+    padding-top: .25rem;
+}
+.search-wrapper label{
+    font-size: .85rem;
+    font-weight: 600;
+}
+body > div > div:nth-child(2) > div > div > div:nth-child(3){
+    border: none;
+    padding-right: 2rem;
+}
+body > div > div:nth-child(2) > div > div > div:nth-child(1){
+    padding-left: 2rem;
+}
+.share-your-car-title{
+    margin: 0;
+    color: #121214;
+    margin-bottom: 0;
+    margin-top: 24px;
+    text-align: center;
+    font-family: RlFreight, HoeflerText-Black, Times New Roman, serif;
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: -0.2px;
+    line-height: 44px;
+    text-transform: none;
+}
+.share-your-car-p{
+    margin: 0;
+    color: #121214;
+    margin-bottom: 32px;
+    margin-top: 8px;
+    text-align: center;
+    font-family: RlBasisGrotesque, Avenir, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-transform: none;
+}
+.main-title-wrapper{
+    position: relative;
+    bottom:17.5rem;
+   
 }
