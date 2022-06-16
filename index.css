@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 1rem;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.foreground{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.foreground{
+    transform: translateZ(-5px) scale(1.5);
+}
+
+
+.title{
+    font-size: 7rem;
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
+}
+
+section{
+    background-color: rgb(51, 51, 51);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding: 2rem;
+    color: white;
+    
+}
