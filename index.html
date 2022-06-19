@@ -5,81 +5,206 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="script/style.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div class="wrapper">
       <div class="menu">
         <div>
-          <a>Logo helye</a>
+          <a class="logo">SHARE YOUR CAR</a><sup class="copyright">&copy;</sup>
         </div>
-        <ul>
-          <li><a>Menu2</a></li>
-          <li><a>Menu1</a></li>
-          <li><a>Menu3</a></li>
-          <li><a>Menu4</a></li>
-          
-        </ul>
+        <div class="nav">
+          <div class="list-item languages">
+            <button class="change-language">
+              <img src="icons/hungary.png" alt="" />
+            </button>
+          </div>
+          <div class="list-item">
+            <span>Home</span>
+          </div>
+          <div class="list-item">
+            <span>Hosting</span>
+          </div>
+          <div class="list-item">
+            <span>Community</span>
+          </div>
+          <div class="list-item">
+            <span>FAQ</span>
+          </div>
+          <div class="list-item">
+            <span>About us</span>
+            <div class="dropdown">
+              <div>Company</div>
+              <div>Career</div>
+            </div>
+          </div>
+          <div class="list-item login">
+            <span class="login-text">Login / Register</span>
+            <span class="material-symbols-outlined icon"> person </span>
+          </div>
+        </div>
       </div>
       <div class="flex-3d">
-        
         <img src="images/pic2.jpg" class="foreground" />
         <div class="main-title-wrapper">
           <p class="share-your-car-title">Share your car!</p>
           <h1 class="share-your-car-p">Explore our car sharing marketplace</h1>
-  
         </div>
         <div>
-          
           <div class="search-wrapper">
-            <div class="input-group"><label>Where</label><input type="search"/></div>
-            <div class="input-group"><label>From</label><input type="date"/></div>
-            <div class="input-group"><label>Until</label><input type="date"/></div>
+            <div class="icon">
+              <span class="material-symbols-outlined"> search </span>
+            </div>
+            <div class="input-group">
+              <label>Where</label><input type="search" />
+            </div>
+            <div class="input-group">
+              <label>From</label><input type="date" />
+            </div>
+            <div class="input-group">
+              <label>Until</label><input type="date" />
+            </div>
           </div>
         </div>
       </div>
 
-      <section>
-       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus eos quasi facere fugiat in eius aliquam mollitia neque consequatur magnam provident et eligendi veritatis excepturi autem dolore, esse id. Debitis?
+      <section class="slider-container slider-dots">
+        <div class="slider-container">
+          <button class="before"><span class="material-symbols-outlined">
+            chevron_left
+            </span></button>
+          <div class="slider">
+         
+            <div class="slide">
+              <img src="vectors/City driver-pana.svg" alt="img1" />
+              <div>
+              <h3>Looking for the perfect car <span class="city">to drive in the city?</span></h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates, nisi id atque, consequatur voluptas ipsa non tempore
+                exercitationem est dignissimos iste magni dolore optio molestiae
+                quos quasi, quod delectus aliquam.
+              </p>
+            </div>
+            </div>
+            <div class="slide">
+              <img src="vectors/Trip-pana.svg" alt="img1" />
+              <div>
+                <h3>Looking for the perfect car <span class="trip">to your vacation?</span></h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates, nisi id atque, consequatur voluptas ipsa non tempore
+                  exercitationem est dignissimos iste magni dolore optio molestiae
+                  quos quasi, quod delectus aliquam.
+                </p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="vectors/By my car-pana.svg" alt="img1" />
+              <div>
+              <h3>Did you find the perfect car? <span class="rate">Rate us!</span></h3>
+              <p class="slide-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates, nisi id atque, consequatur voluptas ipsa non tempore
+                exercitationem est dignissimos iste magni dolore optio molestiae
+                quos quasi, quod delectus aliquam.
+              </p>
+            </div>
+            </div>
+           
+          </div>
+          
+          <button class="after"><span class="material-symbols-outlined">
+            chevron_right
+            </span></button>
+        </div>
+        <div class="dots">
+          <div class="dot">.</div>
+          <div class="dot">.</div>
+          <div class="dot">.</div>
+        </div>
+          
       </section>
       <div class="flex-3d">
         <img src="images/pic3.jpg" class="foreground" />
         <div class="title">Mizuuuuuu?!</div>
       </div>
       <section>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
-        officiis recusandae aperiam sint debitis fugiat ipsam, doloribus amet
-        numquam dolores, iure ullam suscipit, officia facilis vero? Tenetur
-        beatae ipsum suscipit ex pariatur incidunt quod nemo ullam voluptatem
-        reprehenderit praesentium dolorem laboriosam fugiat atque velit voluptas
-        consectetur quos, quisquam voluptate hic, rem possimus. Fugiat voluptate
-        eius repellendus nisi qui rerum blanditiis, cupiditate, natus quae
-        consequuntur maxime! Dolores vero obcaecati, dignissimos dolorum ex
-        magnam illo asperiores mollitia quis, quasi unde laborum? Magni eveniet
-        dolor accusamus at placeat iste ipsa itaque laborum, ratione quam
-        molestias dignissimos aspernatur, dolore debitis necessitatibus
-        distinctio assumenda, veniam veritatis. Quaerat illum nulla earum alias
-        eligendi animi esse, libero officiis deleniti ducimus quisquam veritatis
-        magnam enim, asperiores quis dolorem sit dolor. Dolor omnis, enim
-        officia cupiditate excepturi odio suscipit cum magni voluptatibus minima
-        ipsum unde, alias inventore eligendi neque repellat voluptas aut error
-        quos obcaecati incidunt modi! Voluptas maiores repellat fugiat quis hic
-        ut culpa odio omnis doloremque fugit explicabo aliquid aspernatur ipsum
-        quam esse, cum tempore aut ducimus vero laborum accusamus necessitatibus
-        quae totam? Velit quis voluptates labore minus? Libero laboriosam unde
-        est fugiat molestias aliquam ad hic ducimus reprehenderit voluptas!
-        Libero voluptatum voluptatibus mollitia dolorum porro modi molestiae.
-        Eos commodi harum veniam laborum quasi a, eaque deserunt reiciendis
-        explicabo totam officiis, cupiditate est perferendis fugiat magni
-        reprehenderit praesentium. Sint omnis ullam tempore laudantium
-        perferendis delectus, autem hic facere ipsum ex sequi corrupti unde
-        minus nisi eligendi molestias consequuntur similique expedita impedit
-        fugiat incidunt pariatur rerum exercitationem? Sapiente, enim fugiat cum
-        nemo consequatur animi ad illo dicta ut optio minima ipsum? Provident
-        eveniet alias necessitatibus maiores molestias molestiae fugit ipsum
-        tempora ipsam asperiores odit incidunt modi dolorem cum itaque,
-        voluptatem eum nihil explicabo ab id corporis veniam mollitia odio.
-        Suscipit dolorum debitis atque, est hic eaque molestiae a.
+        <div class="footer">
+          <div class="footer-item">
+            <ul>
+              <div class="title">Share Your Car</div>
+              <li>About</li>
+              <li>Team</li>
+              <li>Policies</li>
+              <li>Careers</li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <ul>
+              <div class="title">Explore</div>
+              <li>Book a car</li>
+              <li>FAQs</li>
+              <li>Get help</li>
+              <li>Trust & safety</li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <ul>
+              <div class="title">Car types</div>
+              <li>Vans</li>
+              <li>Exotic & Luxury</li>
+              <li>Classics</li>
+              <li>Minivans</li>
+              <li>Cars</li>
+              <li>Sport</li>
+              <li>Trucks</li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <ul>
+              <div class="title">Hosting</div>
+              <li>List your car</li>
+              <li>Best Hosts</li>
+              <li>Host tools</li>
+              <li>FAQs</li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <ul>
+              <div class="title">Makes</div>
+              <li>Tesla</li>
+              <li>Lamborghini</li>
+              <li>Rolls-Royce</li>
+              <li>BMW</li>
+            </ul>
+          </div>
+        </div>
+        <div class="logos">
+          <div>
+            <img src="icons/facebook.png" />
+          </div>
+          <div>
+            <img src="icons/instagram.png" />
+          </div>
+          <div>
+            <img src="icons/twitter.png" />
+          </div>
+          <div>
+            <img src="icons/youtube.png" />
+          </div>
+        </div>
       </section>
     </div>
   </body>

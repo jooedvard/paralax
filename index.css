@@ -1,158 +1,306 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 :root {
   --main-font-style: "Roboto", sans-serif;
+  --logo-font-style: "Oswald", sans-serif;
+  --city-red: rgba(190, 70, 70, 255);
+  --trip-purple: rgba(111, 94, 255, 255);
+  --rate-orange: rgba(255, 151, 94, 255);
 }
 * {
   font-family: var(--main-font-style);
-  
-
 }
-body{
-    margin: 0;
-    padding: 0;
-    
+body {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
 }
 
-.wrapper{
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    perspective: 10px;
-  
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
 }
 
-.flex-3d{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding-bottom: 1rem;
-    transform-style: preserve-3d;
-    z-index: -1;
-    flex-direction: column;
+.flex-3d {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 1rem;
+  transform-style: preserve-3d;
+  z-index: -1;
+  flex-direction: column;
 }
 
-.foreground{
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-    z-index: -1;
-    padding: 0;
-    margin: 0;
+.foreground {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
 }
 
-.foreground{
-    transform: translateZ(-5px) scale(1.5);
+.foreground {
+  transform: translateZ(-5px) scale(1.5);
+}
+.footer {
+  display: flex;
+  margin: auto;
+  gap: 2.5rem;
 }
 
-
-.title{
-    font-size: 7rem;
-    color: whitesmoke;
-    text-shadow: 1px 1px black;
+.footer-item ul li {
+  list-style-type: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: ease-in-out 0.15s;
+}
+.footer-item ul li:hover {
+  font-weight: bolder;
+  color: rgb(5, 90, 218);
+}
+.footer-item .title {
+  font-size: 1.1rem;
+  font-weight: bolder;
+  padding-bottom: 1.25rem;
+}
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.75rem;
+  padding: 2rem;
+}
+.logos img {
+  max-width: 2rem;
+  cursor: pointer;
 }
 
-section{
-    min-height: 40vh;
-    background-color: rgb(245, 245, 248);
-    font-size: 1.2rem;
-    line-height: 1.5;
-    padding: 2rem;
-    color: black;
-    text-align: justify;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+section {
+  min-height: 47.5vh;
+  background-color: rgb(245, 245, 248);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 2rem;
+  color: black;
+  text-align: justify;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  display: flex;
+  flex-direction: column;
 }
-.menu{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(245, 245, 248);
-    padding: 0;
-    margin: 0;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    transform-style: preserve-3d;
-    padding: 1.25rem;
-    font-size: 1.1rem;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-}
-
-.menu ul{
-    margin: 0%;
-    display: flex;
-    gap: 4rem;
-    justify-content: flex-end;
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(245, 245, 248);
+  padding: 0;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transform-style: preserve-3d;
+  padding: 1.25rem;
+  font-size: 1.1rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-.menu ul li{
-    list-style-type: none;
-    cursor: pointer;
-}
-.search-wrapper{
-    display: flex;
-    background-color: white;
-    border-radius: 35px;
-    position: relative;
-    bottom: 7.5rem;
+.menu .nav {
+  margin: 0%;
+  display: flex;
+  gap: 4rem;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
-.search-wrapper .input-group{
-    display: flex;
-    flex-direction: column;
-    border-right: 1px solid gainsboro;
-    padding: 1rem;
+.menu .nav .list-item {
+  list-style-type: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.search-wrapper .input-group input{
-    min-width: 10rem;
-    outline: none;
-    border: none;
-    padding-top: .25rem;
+.menu .nav .list-item:hover {
+  color: rgb(5, 90, 218);
 }
-.search-wrapper label{
-    font-size: .85rem;
-    font-weight: 600;
+.menu .languages button {
+  padding-top: 0.5rem;
+  border: none;
+  background-color: unset;
+  cursor: pointer;
 }
-body > div > div:nth-child(2) > div > div > div:nth-child(3){
-    border: none;
-    padding-right: 2rem;
+.menu .languages img {
+  max-width: 100%;
+  max-height: 100%;
+  height: 2rem;
+  object-fit: cover;
 }
-body > div > div:nth-child(2) > div > div > div:nth-child(1){
-    padding-left: 2rem;
+.menu .login {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
-.share-your-car-title{
-    margin: 0;
-    color: #121214;
-    margin-bottom: 0;
-    margin-top: 24px;
-    text-align: center;
-    font-family: RlFreight, HoeflerText-Black, Times New Roman, serif;
-    font-size: 38px;
-    font-weight: 900;
-    letter-spacing: -0.2px;
-    line-height: 44px;
-    text-transform: none;
+.menu .login-text {
+  font-family: var(--logo-font-style);
+  font-size: 1rem;
+  font-weight: lighter;
+  color: black !important;
 }
-.share-your-car-p{
-    margin: 0;
-    color: #121214;
-    margin-bottom: 32px;
-    margin-top: 8px;
-    text-align: center;
-    font-family: RlBasisGrotesque, Avenir, Helvetica Neue, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 900;
-    letter-spacing: 0;
-    line-height: 20px;
-    text-transform: none;
+.menu .logo {
+  font-family: var(--logo-font-style);
+  font-size: 1.5rem;
 }
-.main-title-wrapper{
-    position: relative;
-    bottom:17.5rem;
-   
+.menu .copyright {
+  font-size: 0.9rem;
+  font-variant: small-caps;
+  padding-left: 0.15rem;
+}
+.menu .login .icon {
+  padding: 0.5rem;
+  border-radius: 25px;
+  color: black !important;
+}
+.menu .dropdown {
+  position: absolute;
+  top: 4rem;
+  z-index: 50;
+  background-color: rgb(245, 245, 248);
+  min-width: 6rem;
+  height: fit-content;
+  padding: 1.25rem;
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: black !important;
+}
+.search-wrapper {
+  display: flex;
+  background-color: white;
+  border-radius: 35px;
+  position: relative;
+  bottom: 7.5rem;
+}
+
+.search-wrapper .input-group {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid gainsboro;
+  padding: 1rem;
+}
+.search-wrapper .input-group input {
+  min-width: 10rem;
+  outline: none;
+  border: none;
+  padding-top: 0.25rem;
+}
+.search-wrapper label {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.search-wrapper .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+  border-right: 1px solid gainsboro;
+}
+body > div > div:nth-child(2) > div > div > div:nth-child(4) {
+  border: none;
+  padding-right: 2rem;
+}
+
+.share-your-car-title {
+  margin: 0;
+  color: #121214;
+  margin-bottom: 0;
+  margin-top: 24px;
+  text-align: center;
+  font-family: RlFreight, HoeflerText-Black, Times New Roman, serif;
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: -0.2px;
+  line-height: 44px;
+  text-transform: none;
+}
+.share-your-car-p {
+  margin: 0;
+  color: #121214;
+  margin-bottom: 32px;
+  margin-top: 8px;
+  text-align: center;
+  font-family: RlBasisGrotesque, Avenir, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-transform: none;
+}
+.main-title-wrapper {
+  position: relative;
+  bottom: 17.5rem;
+}
+.slider-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0rem;
+}
+.slider {
+  width: fit-content;
+  max-width: 60vw;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+.slider .slide {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  transition: all 0.5s ease-in-out;
+ 
+}
+.slider .slide img {
+  max-width: auto;
+
+  height: 15rem;
+  object-fit: cover;
+}
+.slider-container button {
+  margin: 1rem;
+  cursor: pointer;
+  background-color: unset;
+  border: unset;
+}
+
+.city {
+  color: var(--city-red);
+}
+.rate {
+  color: var(--rate-orange);
+}
+.trip {
+  color: var(--trip-purple);
+}
+.slider-dots {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: center;
+}
+.dots {
+  display: flex;
+  gap: 1rem;
+  font-size: 5rem;
+  align-items: center;
+  justify-content: center;
 }
